@@ -1,0 +1,13 @@
+Flask
+Flask-Cors
+mysql-connector-python
+python-dotenv
+Werkzeug
+gunicorn 
+requests
+flask_session
+pandas
+scikit-learn
+google-generativeai
+googlemaps
+ortools

@@ -1,0 +1,230 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/* Import Leaflet styles */
+@import 'leaflet/dist/leaflet.css';
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+
+  body {
+    @apply bg-neutral-light text-neutral-dark dark:bg-neutral-dark dark:text-neutral-light;
+    font-family: 'Lato', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    @apply font-bold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  p {
+    @apply text-base;
+  }
+}
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
+@layer components {
+  .tremor-Card {
+    @apply rounded-xl shadow-soft dark:shadow-soft-dark !important;
+  }
+
+  .tremor-Chart {
+    @apply rounded-lg overflow-hidden;
+  }
+
+  .chart-container {
+    @apply p-4 bg-white dark:bg-neutral-dark/50 rounded-xl shadow-soft dark:shadow-soft-dark;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-2.5 rounded-xl
+           hover:bg-primary-light transition-colors duration-200
+           shadow-soft hover:shadow-medium dark:shadow-soft-dark;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-primary px-6 py-2.5 rounded-xl border border-primary
+           hover:bg-primary hover:text-white transition-colors duration-200
+           shadow-soft hover:shadow-medium dark:shadow-soft-dark
+           dark:bg-neutral-dark dark:border-primary-light dark:text-primary-light;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-soft p-6
+           hover:shadow-medium transition-shadow duration-200
+           dark:bg-neutral-dark/50 dark:shadow-soft-dark dark:hover:shadow-medium-dark;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2.5 rounded-xl border border-gray-200
+           focus:ring-2 focus:ring-primary focus:border-transparent
+           bg-white text-neutral-dark
+           dark:bg-neutral-dark/50 dark:border-gray-700 dark:text-neutral-light
+           dark:focus:ring-primary-light;
+  }
+
+  /* Chart color classes */
+  .chart-color-primary {
+    @apply text-chart-light-primary dark:text-chart-dark-primary;
+  }
+
+  .chart-color-secondary {
+    @apply text-chart-light-secondary dark:text-chart-dark-secondary;
+  }
+
+  .chart-color-tertiary {
+    @apply text-chart-light-tertiary dark:text-chart-dark-tertiary;
+  }
+
+  .chart-color-success {
+    @apply text-chart-light-success dark:text-chart-dark-success;
+  }
+
+  .chart-color-warning {
+    @apply text-chart-light-warning dark:text-chart-dark-warning;
+  }
+
+  .chart-color-danger {
+    @apply text-chart-light-danger dark:text-chart-dark-danger;
+  }
+
+  .chart-color-info {
+    @apply text-chart-light-info dark:text-chart-dark-info;
+  }
+
+  .chart-color-gray {
+    @apply text-chart-light-gray dark:text-chart-dark-gray;
+  }
+
+  /* Sustainability Chart Colors */
+  .chart-emission {
+    @apply text-chart-light-emission dark:text-chart-dark-emission;
+  }
+
+  .chart-emission-gradient {
+    @apply bg-gradient-to-r from-chart-light-emission to-chart-light-emission-secondary dark:from-chart-dark-emission dark:to-chart-dark-emission-secondary;
+  }
+
+  .chart-fuel {
+    @apply text-chart-light-fuel dark:text-chart-dark-fuel;
+  }
+
+  .chart-trees {
+    @apply text-chart-light-trees dark:text-chart-dark-trees;
+  }
+
+  .chart-ai-accent {
+    @apply text-chart-light-ai-accent dark:text-chart-dark-ai-accent;
+  }
+
+  /* Card Effects */
+  .card-glow {
+    @apply shadow-glow-success dark:shadow-glow-active transition-shadow duration-300;
+  }
+
+  .card-glow-hover:hover {
+    @apply shadow-glow-active;
+  }
+
+  /* Typography */
+  .text-primary {
+    @apply text-neutral-dark/90 dark:text-neutral-light/90;
+  }
+
+  .text-secondary {
+    @apply text-neutral-dark/70 dark:text-neutral-light/70;
+  }
+
+  .text-disabled {
+    @apply text-neutral-dark/50 dark:text-neutral-light/50;
+  }
+
+  /* Surface Styles */
+  .surface {
+    @apply bg-white dark:bg-surface-dark;
+  }
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Light Mode Scrollbar */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5c5c5;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Dark Mode Scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #4b5563;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c5c5c5 #f1f1f1;
+}
+
+.dark * {
+  scrollbar-color: #4b5563 #1f2937;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera when not needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox when not needed */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

@@ -1,0 +1,47 @@
+/* Leaflet map container */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Leaflet controls */
+.leaflet-control-container .leaflet-top,
+.leaflet-control-container .leaflet-bottom {
+  z-index: 999;
+}
+
+/* Leaflet popup */
+.leaflet-popup-content-wrapper {
+  @apply bg-white dark:bg-neutral-dark rounded-xl shadow-medium dark:shadow-medium-dark;
+}
+
+.leaflet-popup-content {
+  @apply m-0 p-4;
+}
+
+.leaflet-popup-tip {
+  @apply bg-white dark:bg-neutral-dark shadow-medium dark:shadow-medium-dark;
+}
+
+/* Leaflet markers */
+.leaflet-marker-icon {
+  @apply transition-transform duration-200;
+}
+
+.leaflet-marker-icon:hover {
+  @apply scale-110;
+}
+
+/* Leaflet controls */
+.leaflet-control {
+  @apply rounded-lg overflow-hidden shadow-soft dark:shadow-soft-dark;
+}
+
+.leaflet-control a {
+  @apply bg-white dark:bg-neutral-dark text-neutral-dark dark:text-neutral-light;
+}
+
+.leaflet-control a:hover {
+  @apply bg-gray-50 dark:bg-neutral-dark/70;
+} 

@@ -1,0 +1,375 @@
+/* Dark Theme Base Colors */
+:root {
+  --dark-bg: #0D1526;
+  --dark-card-bg: #151D2E;
+  --dark-border: #242F46;
+  --dark-text: #F3F4F6;
+  --dark-text-secondary: #9CA3AF;
+  --dark-blue-accent: #3B82F6;
+  --dark-success: #22C55E;
+  --dark-danger: #EF4444;
+}
+
+/* Dark Theme Fixes */
+.dark {
+  background-color: var(--dark-bg);
+}
+
+.dark .bg-white {
+  background-color: var(--dark-card-bg) !important;
+}
+
+.dark .border-gray-200 {
+  border-color: var(--dark-border) !important;
+}
+
+.dark .text-gray-700 {
+  color: var(--dark-text) !important;
+}
+
+.dark .text-gray-500 {
+  color: var(--dark-text-secondary) !important;
+}
+
+/* Logo Styles */
+.dark .logo-container {
+  background-color: transparent;
+}
+
+.dark .logo-container img {
+  filter: brightness(1.2);
+  opacity: 1;
+}
+
+/* Success and Error States */
+.dark .success-badge {
+  background-color: var(--dark-success);
+  color: white;
+}
+
+.dark .error-badge {
+  background-color: var(--dark-danger);
+  color: white;
+}
+
+/* MUI Button Dark Theme Fixes */
+.dark .MuiButton-outlinedPrimary,
+.dark .css-vi0zgl {
+  color: var(--dark-blue-accent) !important;
+  border-color: var(--dark-blue-accent) !important;
+}
+
+.dark .MuiButton-outlinedPrimary:hover,
+.dark .css-vi0zgl:hover {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+}
+
+.dark .MuiButton-outlinedPrimary:disabled,
+.dark .css-vi0zgl:disabled {
+  color: rgba(255, 255, 255, 0.3) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* MUI Typography Fixes for Dark Mode */
+.dark .MuiTypography-root {
+  color: var(--dark-text) !important;
+}
+
+.dark .MuiTypography-h1 {
+  color: var(--dark-text) !important;
+}
+
+.dark .MuiTypography-body1 {
+  color: var(--dark-text) !important;
+}
+
+.dark .MuiTypography-paragraph {
+  color: var(--dark-text) !important;
+}
+
+.dark .MuiStepper-root {
+  color: var(--dark-text) !important;
+}
+
+.dark .MuiStepLabel-label {
+  color: var(--dark-text-secondary) !important;
+}
+
+.dark .MuiStepLabel-label.Mui-active {
+  color: var(--dark-blue-accent) !important;
+}
+
+.dark .MuiStepConnector-line {
+  border-color: var(--dark-border) !important;
+}
+
+.dark .MuiBox-root {
+  color: var(--dark-text) !important;
+}
+
+/* MUI Tabs Fixes for Dark Mode */
+.dark .MuiTabs-flexContainer,
+.dark .css-k008qs {
+  color: var(--dark-text) !important;
+}
+
+.dark .MuiTab-root {
+  color: var(--dark-text-secondary) !important;
+}
+
+.dark .MuiTab-root.Mui-selected {
+  color: var(--dark-blue-accent) !important;
+}
+
+.dark .MuiTabs-indicator {
+  background-color: var(--dark-blue-accent) !important;
+}
+
+.dark .css-8ptgxe {
+  color: var(--dark-text) !important;
+}
+
+.dark .css-1idavxa {
+  color: var(--dark-text) !important;
+}
+
+.dark .css-g6kz7a {
+  color: var(--dark-text-secondary) !important;
+}
+
+.dark .css-wje1bd {
+  color: var(--dark-text) !important;
+}
+
+.dark .css-2fdkz6 {
+  color: var(--dark-text) !important;
+}
+
+/* Input Field Improvements */
+.input-field {
+  height: 48px;
+  padding: 0 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.dark .input-field {
+  background-color: var(--dark-card-bg);
+  border-color: var(--dark-border);
+  color: var(--dark-text);
+}
+
+.input-field:focus {
+  border-color: var(--dark-blue-accent);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.dark .input-field:focus {
+  border-color: var(--dark-blue-accent);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+/* Table Dark Theme Fixes */
+.dark .MuiTableCell-root {
+  color: var(--dark-text) !important;
+  border-bottom-color: var(--dark-border) !important;
+}
+
+.dark .MuiPaper-root {
+  background-color: var(--dark-card-bg) !important;
+}
+
+.dark .MuiTableHead-root .MuiTableCell-root {
+  background-color: var(--dark-card-bg) !important;
+}
+
+/* Card Dark Theme Fixes */
+.dark .card {
+  background-color: var(--dark-card-bg);
+  border-color: var(--dark-border);
+}
+
+.dark .card-header {
+  border-bottom-color: var(--dark-border);
+}
+
+/* Button Improvements */
+.btn {
+  height: 48px;
+  padding: 0 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--dark-blue-accent);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+.dark .btn-secondary {
+  background-color: var(--dark-card-bg);
+  color: var(--dark-text);
+}
+
+.dark .btn-secondary:hover {
+  background-color: var(--dark-border);
+}
+
+/* Generate Forecast Button */
+.dark .generate-forecast-btn {
+  background-color: var(--dark-blue-accent);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+.dark .generate-forecast-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Product List */
+.dark .product-item {
+  background-color: var(--dark-card-bg);
+  border: 1px solid var(--dark-border);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.dark .product-item:hover {
+  border-color: var(--dark-blue-accent);
+}
+
+/* Chart Area */
+.dark .chart-container {
+  background-color: var(--dark-card-bg);
+  border: 1px solid var(--dark-border);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.dark .chart-grid line {
+  stroke: var(--dark-border);
+}
+
+.dark .chart-axis text {
+  fill: var(--dark-text-secondary);
+}
+
+/* Stats Display */
+.dark .stats-display {
+  background-color: var(--dark-card-bg);
+  border: 1px solid var(--dark-border);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.dark .stats-value {
+  color: var(--dark-text);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.dark .stats-label {
+  color: var(--dark-text-secondary);
+  font-size: 0.875rem;
+}
+
+/* Success Message */
+.dark .success-message {
+  background-color: rgba(34, 197, 94, 0.1);
+  border: 1px solid var(--dark-success);
+  color: var(--dark-success);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+/* Select Field Improvements */
+.select-field {
+  height: 48px;
+  padding: 0 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  width: 100%;
+  transition: all 0.2s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+}
+
+.dark .select-field {
+  background-color: var(--dark-card-bg);
+  border-color: var(--dark-border);
+  color: var(--dark-text);
+}
+
+/* Form Group Improvements */
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.dark .form-group label {
+  color: var(--dark-text);
+}
+
+/* Modal Dark Theme Fixes */
+.dark .modal {
+  background-color: var(--dark-card-bg);
+  border-color: var(--dark-border);
+}
+
+.dark .modal-header {
+  border-bottom-color: var(--dark-border);
+}
+
+.dark .modal-footer {
+  border-top-color: var(--dark-border);
+}
+
+/* Feature Cards */
+.dark .feature-card {
+  background-color: var(--dark-card-bg);
+  border: 1px solid var(--dark-border);
+}
+
+/* Navigation */
+.dark .nav-item {
+  color: var(--dark-text-secondary);
+}
+
+.dark .nav-item:hover,
+.dark .nav-item.active {
+  color: var(--dark-text);
+  background-color: var(--dark-border);
+}
+
+/* Stats Cards */
+.dark .stats-card {
+  background-color: var(--dark-card-bg);
+  border: 1px solid var(--dark-border);
+}
+
+.dark .stats-value {
+  color: var(--dark-text);
+}
+
+.dark .stats-label {
+  color: var(--dark-text-secondary);
+} 
